@@ -3,9 +3,9 @@ from semantic_similarity import compute_semantic_similarity
 
 if __name__ == '__main__':
     datasets = [
-        #('spider', 'value_net'),
-        #('spider', 'bridge'),
-        #('moviedata', 'grammar_net'),
+        ('spider', 'value_net'),
+        ('spider', 'bridge'),
+        ('moviedata', 'grammar_net'),
         ('chinook', 'grammar_net')
     ]
 
