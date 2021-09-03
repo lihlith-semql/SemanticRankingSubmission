@@ -1,0 +1,1 @@
+{"singer": [["singer_id", "int", "PRI"], ["name", "text", ""], ["birth_year", "real", ""], ["net_worth_millions", "real", ""], ["citizenship", "text", ""]], "song": [["song_id", "int", "PRI"], ["title", "text", ""], ["singer_id", "int", "MUL"], ["sales", "real", ""], ["highest_position", "real", ""]]}

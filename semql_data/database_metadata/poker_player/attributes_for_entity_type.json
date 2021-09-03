@@ -1,0 +1,1 @@
+{"poker_player": [["poker_player_id", "int", "PRI"], ["people_id", "int", "MUL"], ["final_table_made", "real", ""], ["best_finish", "real", ""], ["money_rank", "real", ""], ["earnings", "real", ""]], "people": [["people_id", "int", "PRI"], ["nationality", "text", ""], ["name", "text", ""], ["birth_date", "text", ""], ["height", "real", ""]]}

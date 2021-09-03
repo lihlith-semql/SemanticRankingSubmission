@@ -1,0 +1,1 @@
+{"stadium": [], "singer": [], "concert": [["stadium", "stadium_id", "stadium_id"]], "singer_in_concert": [["singer", "singer_id", "singer_id"], ["concert", "concert_id", "concert_id"]]}

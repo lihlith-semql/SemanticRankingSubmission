@@ -1,0 +1,1 @@
+{"conductor": [], "orchestra": [["conductor", "conductor_id", "conductor_id"]], "performance": [["orchestra", "orchestra_id", "orchestra_id"]], "show": [["performance", "performance_id", "performance_id"]]}

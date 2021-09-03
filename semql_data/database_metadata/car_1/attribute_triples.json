@@ -1,0 +1,1 @@
+{"continents": [], "countries": [["continents", "continent", "contid"]], "car_makers": [["countries", "country", "countryid"]], "model_list": [["car_makers", "maker", "id"]], "car_names": [["model_list", "model", "model"]], "cars_data": [["car_names", "id", "makeid"]]}

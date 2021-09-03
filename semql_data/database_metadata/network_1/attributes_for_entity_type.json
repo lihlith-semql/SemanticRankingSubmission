@@ -1,0 +1,1 @@
+{"highschooler": [["id", "int", "PRI"], ["name", "text", ""], ["grade", "int", ""]], "friend": [["student_id", "int", "MUL"], ["friend_id", "int", "MUL"]], "likes": [["student_id", "int", "MUL"], ["liked_id", "int", "MUL"]]}

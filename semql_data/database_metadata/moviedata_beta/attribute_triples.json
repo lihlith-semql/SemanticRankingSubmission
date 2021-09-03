@@ -1,0 +1,133 @@
+{
+  "cast": [
+    [
+      "movie",
+      "movie_id",
+      "id"
+    ],
+    [
+      "person",
+      "person_id",
+      "id"
+    ]
+  ],
+  "sqlite_sequence": [],
+  "company": [],
+  "country": [],
+  "crew": [
+    [
+      "movie",
+      "movie_id",
+      "id"
+    ],
+    [
+      "person",
+      "person_id",
+      "id"
+    ]
+  ],
+  "genre": [],
+  "has_genre": [
+    [
+      "movie",
+      "movie_id",
+      "id"
+    ],
+    [
+      "genre",
+      "genre_id",
+      "id"
+    ]
+  ],
+  "has_keyword": [
+    [
+      "movie",
+      "movie_id",
+      "id"
+    ],
+    [
+      "keyword",
+      "keyword_id",
+      "id"
+    ]
+  ],
+  "keyword": [],
+  "language": [],
+  "movie": [],
+  "oscar": [],
+  "oscar_nominee": [
+    [
+      "person",
+      "person_id",
+      "id"
+    ],
+    [
+      "movie",
+      "movie_id",
+      "id"
+    ],
+    [
+      "oscar",
+      "oscar_id",
+      "id"
+    ]
+  ],
+  "oscar_winner": [
+    [
+      "person",
+      "person_id",
+      "id"
+    ],
+    [
+      "movie",
+      "movie_id",
+      "id"
+    ],
+    [
+      "oscar",
+      "oscar_id",
+      "id"
+    ]
+  ],
+  "person": [],
+  "production_company": [
+    [
+      "company",
+      "company_id",
+      "id"
+    ],
+    [
+      "movie",
+      "movie_id",
+      "id"
+    ]
+  ],
+  "production_country": [
+    [
+      "country",
+      "iso_3166_1",
+      "iso_3166_1"
+    ],
+    [
+      "movie",
+      "movie_id",
+      "id"
+    ]
+  ],
+  "soda_idx_basedata_origins": [],
+  "soda_idx_basedata_values": [],
+  "soda_idx_metadata_origins": [],
+  "soda_idx_metadata_values": [],
+  "spoken_language": [
+    [
+      "language",
+      "iso_639_1",
+      "iso_639_1"
+    ],
+    [
+      "movie",
+      "movie_id",
+      "id"
+    ]
+  ]
+}

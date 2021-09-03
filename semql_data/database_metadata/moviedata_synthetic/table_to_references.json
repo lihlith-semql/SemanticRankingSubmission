@@ -1,0 +1,40 @@
+{
+  "production_company": [
+    ["company", "company_id", "id"],
+    ["movie", "movie_id", "id"]
+  ],
+  "production_country": [
+    ["country", "iso_3166_1","iso_3166_1"],
+    ["movie", "movie_id", "id" ]
+  ],
+  "has_genre": [
+    ["genre", "genre_id", "id"],
+    ["movie", "movie_id", "id"]
+  ],
+  "has_keyword": [
+    ["keyword", "keyword_id", "id"],
+    ["movie", "movie_id", "id"]
+  ],
+  "spoken_language": [
+    ["language", "iso_639_1", "iso_639_1"],
+    ["movie", "movie_id", "id"]
+  ],
+  "cast": [
+    ["movie", "movie_id", "id"],
+    ["person", "person_id", "id"]
+  ],
+  "crew": [
+    ["movie", "movie_id", "id"],
+    ["person", "person_id", "id"]
+  ],
+  "oscar_nominee": [
+    ["movie", "movie_id", "id"],
+    ["oscar", "oscar_id", "id"],
+    ["person", "person_id", "id"]
+  ],
+  "oscar_winner": [
+    ["movie", "movie_id", "id"],
+    ["oscar", "oscar_id", "id"],
+    ["person", "person_id", "id"]
+  ]
+}

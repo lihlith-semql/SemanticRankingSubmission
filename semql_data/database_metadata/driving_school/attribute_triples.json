@@ -1,0 +1,1 @@
+{"Addresses": [], "Staff": [["Addresses", "staff_address_id", "address_id"]], "Vehicles": [], "Customers": [["Addresses", "customer_address_id", "address_id"]], "Customer_Payments": [["Customers", "customer_id", "customer_id"]], "Lessons": [["Customers", "customer_id", "customer_id"], ["Staff", "staff_id", "staff_id"], ["Vehicles", "vehicle_id", "vehicle_id"]]}

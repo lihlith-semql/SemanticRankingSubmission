@@ -1,0 +1,1 @@
+{"museum": [["museum_id", "int", "PRI"], ["name", "text", ""], ["num_of_staff", "int", ""], ["open_year", "text", ""]], "visitor": [["id", "int", "PRI"], ["name", "text", ""], ["level_of_membership", "int", ""], ["age", "int", ""]], "visit": [["museum_id", "int", "MUL"], ["visitor_id", "text", "MUL"], ["num_of_ticket", "int", ""], ["total_spent", "real", ""]]}

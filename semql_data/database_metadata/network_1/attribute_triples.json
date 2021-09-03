@@ -1,0 +1,1 @@
+{"highschooler": [], "friend": [["highschooler", "friend_id", "id"], ["highschooler", "student_id", "id"]], "likes": [["highschooler", "student_id", "id"], ["highschooler", "liked_id", "id"]]}

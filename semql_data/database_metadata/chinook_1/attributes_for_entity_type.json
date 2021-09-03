@@ -1,0 +1,88 @@
+{
+  "Album": [
+    ["AlbumId", "integer", "PRI"],
+    ["Title", "varchar(160)", ""],
+    ["ArtistId", "integer", "MUL"]
+  ],
+  "Artist": [
+    ["ArtistId", "integer", "PRI"],
+    ["Name", "varchar(120)", ""]
+  ],
+  "Customer": [
+    ["CustomerId", "integer", "PRI"],
+    ["FirstName", "varchar(40)", ""],
+    ["LastName", "varchar(20)", ""],
+    ["Company", "varchar(80)", ""],
+    ["Address", "varchar(70)", ""],
+    ["City", "varchar(40)", ""],
+    ["State", "varchar(40)", ""],
+    ["Country", "varchar(40)", ""],
+    ["PostalCode", "varchar(10)", ""],
+    ["Phone", "varchar(24)", ""],
+    ["Fax", "varchar(24)", ""],
+    ["Email", "varchar(60)", ""],
+    ["SupportRepId", "integer", "MUL"]
+  ],
+  "Employee": [
+    ["EmployeeId", "integer", "PRI"],
+    ["LastName", "varchar(20)", ""],
+    ["FirstName", "varchar(20)", ""],
+    ["Title", "varchar(30)", ""],
+    ["ReportsTo", "integer", "MUL"],
+    ["BirthDate", "datetime", ""],
+    ["HireDate", "datetime", ""],
+    ["Address", "varchar(70)", ""],
+    ["City", "varchar(40)", ""],
+    ["State", "varchar(40)", ""],
+    ["Country", "varchar(40)", ""],
+    ["PostalCode", "varchar(10)", ""],
+    ["Phone", "varchar(24)", ""],
+    ["Fax", "varchar(24)", ""],
+    ["Email", "varchar(60)", ""]
+  ],
+  "Genre": [
+    ["GenreId", "integer", "PRI"],
+    ["Name", "varchar(120)", ""]
+  ],
+  "Invoice": [
+    ["InvoiceId", "integer", "PRI"],
+    ["CustomerId", "integer", "MUL"],
+    ["InvoiceDate", "datetime", ""],
+    ["BillingAddress", "varchar(70)", ""],
+    ["BillingCity", "varchar(40)", ""],
+    ["BillingState", "varchar(40)", ""],
+    ["BillingCountry", "varchar(40)", ""],
+    ["BillingPostalCode", "varchar(10)", ""],
+    ["Total", "decimal(10,2)", ""]
+  ],
+  "InvoiceLine": [
+    ["InvoiceLineId", "integer", "PRI"],
+    ["InvoiceId", "integer", "MUL"],
+    ["TrackId", "integer", "MUL"],
+    ["UnitPrice", "decimal(10,2)", ""],
+    ["Quantity", "integer", ""]
+  ],
+  "MediaType": [
+    ["MediaTypeId", "integer", "PRI"],
+    ["Name", "varchar(120)", ""]
+  ],
+  "Playlist": [
+    ["PlaylistId", "integer", "PRI"],
+    ["Name", "varchar(120)", ""]
+  ],
+  "PlaylistTrack": [
+    ["PlaylistId", "integer", "MUL"],
+    ["TrackId", "integer", "MUL"]
+  ],
+  "Track": [
+    ["TrackId", "integer", "PRI"],
+    ["Name", "varchar(200)", ""],
+    ["AlbumId", "integer", "MUL"],
+    ["MediaTypeId", "integer", "MUL"],
+    ["GenreId", "integer", "MUL"],
+    ["Composer", "varchar(220)", ""],
+    ["Milliseconds", "integer", ""],
+    ["Bytes", "integer", ""],
+    ["UnitPrice", "decimal(10,2)", ""]
+  ]
+}

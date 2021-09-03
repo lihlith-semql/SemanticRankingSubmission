@@ -1,0 +1,1 @@
+{"area_code_state": [["area_code", "integer", "PRI"], ["state", "varchar(2)", ""]], "contestants": [["contestant_number", "integer", "PRI"], ["contestant_name", "varchar(50)", ""]], "votes": [["vote_id", "integer", "PRI"], ["phone_number", "integer", ""], ["state", "varchar(2)", "MUL"], ["contestant_number", "integer", "MUL"], ["created", "timestamp", ""]]}

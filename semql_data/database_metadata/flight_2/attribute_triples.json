@@ -1,0 +1,1 @@
+{"airlines": [], "airports": [], "flights": [["airports", "destairport", "airportcode"], ["airports", "sourceairport", "airportcode"]]}

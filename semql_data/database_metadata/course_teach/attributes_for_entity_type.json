@@ -1,0 +1,1 @@
+{"course": [["course_id", "int", "PRI"], ["staring_date", "text", ""], ["course", "text", ""]], "teacher": [["teacher_id", "int", "PRI"], ["name", "text", ""], ["age", "text", ""], ["hometown", "text", ""]], "course_arrange": [["course_id", "int", "MUL"], ["teacher_id", "int", "MUL"], ["grade", "int", "PRI"]]}

@@ -1,0 +1,122 @@
+{
+  "circuits": [
+    ["circuitId", "INTEGER", "PRI"],
+    ["circuitRef", "TEXT", ""],
+    ["name", "TEXT", ""],
+    ["location", "TEXT", ""],
+    ["country", "TEXT", ""],
+    ["lat", "REAL", ""],
+    ["lng", "REAL", ""],
+    ["alt", "TEXT", ""],
+    ["url", "TEXT", ""]
+  ],
+  "races": [
+    ["raceId", "INTEGER", "PRI"],
+    ["year", "INTEGER", ""],
+    ["round", "INTEGER", ""],
+    ["circuitId", "INTEGER", ""],
+    ["name", "TEXT", ""],
+    ["date", "TEXT", ""],
+    ["time", "TEXT", ""],
+    ["url", "TEXT", ""]
+  ],
+  "drivers": [
+    ["driverId", "INTEGER", "PRI"],
+    ["driverRef", "TEXT", ""],
+    ["number", "TEXT", ""],
+    ["code", "TEXT", ""],
+    ["forename", "TEXT", ""],
+    ["surname", "TEXT", ""],
+    ["dob", "TEXT", ""],
+    ["nationality", "TEXT", ""],
+    ["url", "TEXT", ""]
+  ],
+  "status": [
+    ["statusId", "INTEGER", "PRI"],
+    ["status", "TEXT", ""]
+  ],
+  "seasons": [
+    ["year", "INTEGER", "PRI"],
+    ["url", "TEXT", ""]
+  ],
+  "constructors": [
+    ["constructorId", "INTEGER", "PRI"],
+    ["constructorRef", "TEXT", ""],
+    ["name", "TEXT", ""],
+    ["nationality", "TEXT", ""],
+    ["url", "TEXT", ""]
+  ],
+  "constructorStandings": [
+    ["constructorStandingsId", "INTEGER", "PRI"],
+    ["raceId", "INTEGER", ""],
+    ["constructorId", "INTEGER", ""],
+    ["points", "REAL", ""],
+    ["position", "INTEGER", ""],
+    ["positionText", "TEXT", ""],
+    ["wins", "INTEGER", ""]
+  ],
+  "results": [
+    ["resultId", "INTEGER", "PRI"],
+    ["raceId", "INTEGER", ""],
+    ["driverId", "INTEGER", ""],
+    ["constructorId", "INTEGER", ""],
+    ["number", "INTEGER", ""],
+    ["grid", "INTEGER", ""],
+    ["position", "TEXT", ""],
+    ["positionText", "TEXT", ""],
+    ["positionOrder", "INTEGER", ""],
+    ["points", "REAL", ""],
+    ["laps", "TEXT", ""],
+    ["time", "TEXT", ""],
+    ["milliseconds", "TEXT", ""],
+    ["fastestLap", "TEXT", ""],
+    ["rank", "TEXT", ""],
+    ["fastestLapTime", "TEXT", ""],
+    ["fastestLapSpeed", "TEXT", ""],
+    ["statusId", "INTEGER", ""]
+  ],
+  "driverStandings": [
+    ["driverStandingsId", "INTEGER", "PRI"],
+    ["raceId", "INTEGER", ""],
+    ["driverId", "INTEGER", ""],
+    ["points", "REAL", ""],
+    ["position", "INTEGER", ""],
+    ["positionText", "TEXT", ""],
+    ["wins", "INTEGER", ""]
+  ],
+  "constructorResults": [
+    ["constructorResultsId", "INTEGER", "PRI"],
+    ["raceId", "INTEGER", ""],
+    ["constructorId", "INTEGER", ""],
+    ["points", "REAL", ""],
+    ["status", "TEXT", ""]
+  ],
+  "qualifying": [
+    ["qualifyId", "INTEGER", "PRI"],
+    ["raceId", "INTEGER", ""],
+    ["driverId", "INTEGER", ""],
+    ["constructorId", "INTEGER", ""],
+    ["number", "INTEGER", ""],
+    ["position", "INTEGER", ""],
+    ["q1", "TEXT", ""],
+    ["q2", "TEXT", ""],
+    ["q3", "TEXT", ""]
+  ],
+  "pitStops": [
+    ["raceId", "INTEGER", "PRI"],
+    ["driverId", "INTEGER", "PRI"],
+    ["stop", "INTEGER", "PRI"],
+    ["lap", "INTEGER", ""],
+    ["time", "TEXT", ""],
+    ["duration", "TEXT", ""],
+    ["milliseconds", "INTEGER", ""]
+  ],
+  "lapTimes": [
+    ["raceId", "INTEGER", "PRI"],
+    ["driverId", "INTEGER", "PRI"],
+    ["lap", "INTEGER", "PRI"],
+    ["position", "INTEGER", ""],
+    ["time", "TEXT", ""],
+    ["milliseconds", "INTEGER", ""]
+  ]
+}
