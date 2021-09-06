@@ -1,5 +1,5 @@
 import argparse, json
-from nubia.nubia import Nubia
+from nubia_score.nubia import Nubia
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 
 from tqdm import tqdm
