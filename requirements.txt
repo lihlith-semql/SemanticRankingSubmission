@@ -1,0 +1,5 @@
+numpy==1.21.2
+tqdm==4.62.2
+scikit-learn==0.24.2
+nltk==3.6.2
+cuttlepool==0.9.1
