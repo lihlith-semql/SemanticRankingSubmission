@@ -312,13 +312,13 @@ def cv_eval(data_iter, random_seed, n_samples=20, console=True):
         cv_results.append(res)
 
     accuracies = {
-        'conf': [e['n_confidence'] / e['n_test'] for e in cv_results],
-        'nubia': [e['n_nubia'] / e['n_test'] for e in cv_results],
-        'naive': [e['n_naive'] / e['n_test'] for e in cv_results],
-        'calib': [e['n_calib'] / e['n_test'] for e in cv_results],
-        'clf': [e['n_clf'] / e['n_test'] for e in cv_results],
-        'ifelse': [e['n_ifelse'] / e['n_test'] for e in cv_results],
-        'upper_bound': [e['n_upper_bound'] / e['n_test'] for e in cv_results],
+        'confidence': [e['n_confidence'] / e['n_test'] for e in cv_results],
+        'semantic': [e['n_nubia'] / e['n_test'] for e in cv_results],
+        'equal': [e['n_naive'] / e['n_test'] for e in cv_results],
+        'calibrated': [e['n_calib'] / e['n_test'] for e in cv_results],
+        'learned': [e['n_clf'] / e['n_test'] for e in cv_results],
+        'threshold': [e['n_ifelse'] / e['n_test'] for e in cv_results],
+        'oracle-sem': [e['n_upper_bound'] / e['n_test'] for e in cv_results],
         'oracle': [e['n_oracle'] / e['n_test'] for e in cv_results],
     }
 

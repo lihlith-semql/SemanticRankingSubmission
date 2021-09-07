@@ -21,13 +21,13 @@ if __name__ == '__main__':
         else:
             pattern = "outs/{}/grammar_net/{}/sem_sim_output_{}.txt"
             accuracies = {
-                'conf': [],
-                'nubia': [],
-                'naive': [],
-                'calib': [],
-                'clf': [],
-                'ifelse': [],
-                'upper_bound': [],
+                'confidence': [],
+                'semantic': [],
+                'equal': [],
+                'calibrated': [],
+                'learned': [],
+                'threshold': [],
+                'oracle-sem': [],
                 'oracle': [],
             }
             for split in range(1, 11):
