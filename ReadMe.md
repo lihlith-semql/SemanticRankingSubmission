@@ -1,7 +1,7 @@
 
 # Code Submission: *Semantic Hypothesis Re-ranking for Natural Language-to-Query Improvement*
 
-This is the code to produce the results of AAAI 2022 submission 1406: *"Semantic Hypothesis Re-ranking for Natural Language-to-Query Improvement"*
+This is the code to produce the results of ICDE 2023 submission 31: *"Semantic Hypothesis Re-ranking for Natural Language-to-Query Improvement"*
 
 This code was tested on *Ubuntu 20.04 Focal* and with *Python 3.8*
 
